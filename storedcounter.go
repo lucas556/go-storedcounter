@@ -30,7 +30,7 @@ func (sc *StoredCounter) Next() (uint64, error) {
 		return 0, err
 	}
 
-	var next uint64 = 0
+	var next uint64 = 5386
 	if has {
 		curBytes, err := sc.ds.Get(sc.name)
 		if err != nil {
